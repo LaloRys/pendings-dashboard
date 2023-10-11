@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { usePendings } from "../context/PendingsContext";
 import { Close } from "./ui/icons";
+import toast from "react-hot-toast";
 
 const Modal = ({ onClose }) => {
   const { pendings, setPendings } = usePendings();
   const [dueDate, setDueDate] = useState("");
-  
 
   console.log(pendings);
 
@@ -15,6 +15,14 @@ const Modal = ({ onClose }) => {
     const priority = e.target.priority.value;
     const text = e.target.text.value;
     const status = e.target.status.value;
+
+    const isDuplicate = pendings.some(
+      (pending) => pending.text.toLowerCase() === text
+    );
+    if (isDuplicate) {
+      toast.error("Pending with this text already exists");
+      return;
+    }
 
     const newPending = {
       id: uuidv4(), // Utiliza UUID para generar un ID único
@@ -25,6 +33,7 @@ const Modal = ({ onClose }) => {
     };
 
     setPendings([...pendings, newPending]);
+    toast.success("New pending added successfully");
     onClose();
   };
 
@@ -91,7 +100,6 @@ const Modal = ({ onClose }) => {
             />
           </div>
 
-
           <button
             type="submit"
             className="bg-indigo-500 rounded-md hover:bg-indigo-400 text-white p-2"
@@ -100,7 +108,7 @@ const Modal = ({ onClose }) => {
           </button>
         </form>
         <i className="close cursor-pointer" onClick={onClose}>
-          <Close/>
+          <Close />
         </i>
       </div>
     </div>

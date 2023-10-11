@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, React } from "react";
+import toast from "react-hot-toast";
 
 const PendingsContext = createContext();
 
@@ -51,12 +52,18 @@ export const PendingsProvider = ({ children }) => {
           : prevPending
       )
     );
+    toast.success("Pending marked as done");
   };
 
   const removePending = (id) => {
     setPendings((prevPendings) =>
       prevPendings.filter((pending) => pending.id !== id)
     );
+    toast("Pending removed", {
+      duration: 3000,
+      position: "top-center",
+      icon: "🗑️",
+    });
   };
 
   const sortByDueDate = (pendings) => {

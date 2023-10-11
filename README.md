@@ -19,7 +19,10 @@ This is a project of a todo dashboard application developed in React.
 
 **uuid:** Library for generating unique identifiers.
 
-**react-icons:** A set of icon libraries for React applications
+**react-icons:** A set of icon libraries for React applications.
+
+**react-hot-toast:** Library for toast notifications in React applications.
+## How to Run the Application Locally
 
 ## Key Features
 
@@ -38,7 +41,8 @@ This is a project of a todo dashboard application developed in React.
 **Delete Tasks:** Tasks can be deleted from the dashboard once created.
 
 **Hide Completed and Deleted Tasks:** Cards with the "Done" and "Deleted" statuses are not displayed on the dashboard.
-## How to Run the Application Locally
+
+**Prevent Duplicate Descriptions:** The application does not allow duplicate descriptions (input text).
 
 Clone the project
 
