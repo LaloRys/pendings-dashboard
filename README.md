@@ -4,6 +4,11 @@
 This is a project of a todo dashboard application developed in React.
 
 
+## Screenshots
+
+![App Screenshot](https://i.postimg.cc/ZqKYtsFQ/pendings-dashboard.png)
+
+
 ## Tech Stack
 
 **React:** JavaScript library for building interactive and scalable user interfaces.
