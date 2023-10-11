@@ -1,70 +1,61 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pending Tasks Dashboard
 
-## Available Scripts
+This is a project of a todo dashboard application developed in React.
 
-In the project directory, you can run:
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**React:** JavaScript library for building interactive and scalable user interfaces.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**@dnd-kit/core and @dnd-kit/sortable:** Libraries to implement drag-and-drop functionality in the interface.
 
-### `npm test`
+**Tailwind CSS:** Component design framework and utility classes to streamline development and create attractive interfaces.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**uuid:** Library for generating unique identifiers.
 
-### `npm run build`
+**react-icons:** A set of icon libraries for React applications
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Key Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Drag and Drop:** List items can be reordered using drag-and-drop functionality.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Sorting by Due Date:**  Tasks can be sorted by their due date for better organization.
 
-### `npm run eject`
+**Task Visualization:**  Display of tasks categorized by priority and due date.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Mark Tasks as Completed:** Tasks can be marked as completed, updating their status to "Done".
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Modal with Fields:** A modal is available for creating tasks with fields for Priority, Text, and Status.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Active and Done Counters:** Counters for "Active" and "Done" tasks increment based on the actions taken.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Delete Tasks:** Tasks can be deleted from the dashboard once created.
 
-## Learn More
+**Hide Completed and Deleted Tasks:** Cards with the "Done" and "Deleted" statuses are not displayed on the dashboard.
+## How to Run the Application Locally
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clone the project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  git clone https://github.com/LaloRys/pendings-dashboard.git
+```
 
-### Code Splitting
+Go to the project directory
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+  cd pendings-dashboard
+```
 
-### Analyzing the Bundle Size
+Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+  npm install
+```
 
-### Making a Progressive Web App
+Start the server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+  npm start
+```
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
