@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pendings-dashboard/build/static/css/main.36962c68.css",
+    "main.js": "/pendings-dashboard/build/static/js/main.1cd51998.js",
+    "index.html": "/pendings-dashboard/build/index.html",
+    "main.36962c68.css.map": "/pendings-dashboard/build/static/css/main.36962c68.css.map",
+    "main.1cd51998.js.map": "/pendings-dashboard/build/static/js/main.1cd51998.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36962c68.css",
+    "static/js/main.1cd51998.js"
+  ]
+}

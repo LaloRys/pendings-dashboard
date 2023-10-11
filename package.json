@@ -2,6 +2,7 @@
   "name": "pendings-dashboard",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://LaloRys.github.io/pendings-dashboard/build",
   "dependencies": {
     "@dnd-kit/core": "^6.0.8",
     "@dnd-kit/sortable": "^7.0.2",
